@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "bad26fc2-0f11-46f9-bf3a-9fd2a4679a90",
+		"name": "QaCart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38326120"
+	},
+	"item": [
+		{
+			"name": "info",
+			"item": [
+				{
+					"name": "courses info",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Lectures info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://todo.qacart.com/api/v1/info/lectures",
+							"protocol": "https",
+							"host": [
+								"todo",
+								"qacart",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"info",
+								"lectures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Studentsinfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://todo.qacart.com/api/v1/info/students",
+							"protocol": "https",
+							"host": [
+								"todo",
+								"qacart",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"info",
+								"students"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"Hatem@example.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://todo.qacart.com/api/v1/info/students/login",
+							"protocol": "https",
+							"host": [
+								"todo",
+								"qacart",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"info",
+								"students",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
